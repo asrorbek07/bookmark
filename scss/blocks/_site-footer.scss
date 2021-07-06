@@ -1,6 +1,9 @@
-@include  breakpoint-down(50px){
+@include  breakpoint-down(580px){
     .site-footer{
         position: relative;
         top: 105px;
     }
 }
+
+
+
