@@ -32,7 +32,7 @@ svg path {
 }
 // SECTION TOP
 .section-top {
-    max-width: 540px;
+    width: 540px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -49,4 +49,9 @@ svg path {
 .section-top__about {
     @include mer-pad;
     text-align: center;
+}
+@include breakpoint-down(580px){
+    .section-top{
+        width: 100%;
+    }
 }

@@ -461,7 +461,7 @@ svg path {
 }
 
 .section-top {
-  max-width: 540px;
+  width: 540px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -482,6 +482,12 @@ svg path {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .section-top {
+    width: 100%;
+  }
 }
 
 .visually-hidden {
@@ -1123,6 +1129,128 @@ svg path {
     width: 311px;
     height: 200px;
     margin-bottom: 70px;
+  }
+}
+
+.download__top {
+  margin-bottom: 48px;
+}
+
+.download__container {
+  margin-bottom: 20px;
+  padding-bottom: 120px;
+}
+
+.cards {
+  max-width: 911px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card {
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.card:nth-child(2) {
+  margin-top: 40px;
+  margin-left: 34px;
+}
+
+.card:nth-child(3) {
+  margin-top: 80px;
+  margin-left: 34px;
+}
+
+.card__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #252b46;
+  margin-bottom: px;
+}
+
+.card__about {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.card__img-dotted {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.card__link {
+  display: block;
+  padding: 10px 30px;
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  background-color: #5267DF;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #5267DF;
+}
+
+.card__link:hover {
+  color: #5267DF;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card:nth-child(3) {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card:nth-child(2) {
+    margin-left: 0;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
