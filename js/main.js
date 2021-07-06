@@ -20,7 +20,7 @@ if (elTabsLink.length > 0) {
                 item.classList.remove('tabs__item--active')
             })
             link.parentElement.classList.add('tabs__item--active');
-            elFeaturesPanel.forEach(function(panel){
+            elFeaturesPanel.forEach(function (panel) {
                 panel.classList.remove('features__panel--active')
             })
             document.querySelector(link.getAttribute('href')).classList.add('features__panel--active');
@@ -30,6 +30,19 @@ if (elTabsLink.length > 0) {
     }
     );
 }
+var elQuestionsBtn = document.querySelectorAll('.questions__button');
+if (elQuestionsBtn.length > 0) {
+    elQuestionsBtn.forEach(function (btn) {
+        btn.addEventListener('click', function (evt) {
+            evt.preventDefault();
+            btn.classList.toggle('questions__button--active');
+            console.log('hello')
+            
+        })
+    })
+    
+}
+
 
 
 
